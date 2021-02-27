@@ -1,0 +1,477 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color:  white;
+    color:black;
+    font-family: "Yu Mincho",”sans-serif”,ヒラギノ角ゴシック;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    }
+a {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:black;
+    opacity:0.5;
+}
+p {
+    margin-bottom: 0;
+}
+.nav {
+    display:none;
+}
+.dropdown>button{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.dropdown-toggle::after {
+    display:none;
+}
+.dropdown-menu {
+    color:black;
+}
+.dropdown-item {
+    color:black;
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-family: "Yu Mincho";
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.movie {
+    position: relative;
+}
+video {
+    height: 100vh;
+    margin-bottom: 100px;
+}
+.movie h2 {
+    position: absolute;
+    top: 40%;
+    left:28%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    color:white;
+}
+/*フェードインアニメ*/
+.right-to-left {
+    opacity: 0.1;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transition: all 1.2s;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.right-to-left.scrollin {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translateX(0);
+}
+.left-to-right {
+    opacity: 0.1;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transition: all 1.2s;
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+.left-to-right.scrollin {
+    opacity: 1;
+    transform: translate(0);
+    -webkit-transform: translateX(0);
+}
+.down-to-top {
+    opacity: 0.1;
+    transform: translateY(200px);
+    transition: all 2s;
+}
+.down-to-top.scrollin {
+    opacity: 1;
+    transform: translateY(-5%);
+}
+.sect02 {
+    overflow: hidden;
+} 
+/* フェードインここまで */
+#skill2,#works2,#price2,#about2,#contact2 {
+    padding-top: 30px;
+}
+.skill-contents {
+    width: 80%;
+    margin: auto;
+}
+.skill-title h3{
+    text-align: center;
+}
+.skill-img {
+    margin: auto;
+    text-align: center;
+}
+.skill-img img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.skill-desc {
+    margin-bottom: 60px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+.skill-desc:last-of-type {
+    margin-bottom: 100px;
+}
+#works {
+    height: 100vh;
+}
+.works {
+    padding-bottom: 50px;
+}
+.works-contents {
+    width: 80%;
+    margin: auto;
+}
+/* carousel */
+.carousel-item img{
+    width: 100%;
+    height:400px;
+}
+.carousel-item img:hover {
+    opacity:0.5;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+/* carouselここまで */
+.pd-pc {
+    display:none;
+}
+.price {
+    width:80%;
+    margin: auto;
+}
+.price-content {
+    display: flex;
+    margin-bottom: 100px;
+}
+.price-content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.price-img img{
+    width: 200px;
+    height: 200px;
+}
+.price-price h3{
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.price-price p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.price-desc {
+    margin-left: 20px;
+}
+.price-desc h3 {
+    font-size: 20px;
+}
+.price-desc p {
+    font-size: 14px;
+}
+#price-content2,#price-content4 {
+    margin: auto;
+}
+#price-content2,#price-content4 .price-price {
+    text-align: right;
+}
+#price-content2 .price-desc {
+    margin-right: 20px;
+}
+#price-content4 .price-desc {
+    margin-right: 20px;
+}
+#price-content4 .price-desc h3 {
+    text-align: right;
+}
+.attention {
+    margin-top: 80px;
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+}
+.attention h3 {
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+.attention p {
+    margin-bottom: 10px;
+}
+.attention p:first-of-type {
+    font-weight: bold;
+}
+/* fade */
+.scrollanime {opacity: 0;}
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.effect-fade {
+    opacity : 0;
+    transition : all 5s;
+    transition-delay:4s;
+}
+    
+.effect-fade.effect-scroll {
+opacity : 1;
+transform : translate(0, 0);
+}
+/* fadeここまで   */
+/*para 固定された画像*/
+.para {
+    background: url(img/black-1072366_1920.jpg) no-repeat 100% 100% fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    text-align: center;
+    height:500px;
+    margin-top: 200px;
+  }
+  .para img {
+    width: auto;
+  }
+/* paraここまで */
+#promise {
+    height: 100vh;
+}
+.promise {
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    color:white;
+}
+.promise h2 {
+    padding-top: 30px;
+}
+.promise .title {
+    display:flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 80px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    align-items: center;
+    font-weight: bold;
+}
+.oya-mc {
+    text-align: center;
+}
+.promise-content {
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	text-align: left;
+	display: inline-block;
+    font-weight: bold;
+}
+.promise-content p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.about-contents {
+    width: 80%;
+    margin: auto;
+}
+.about-img {
+    text-align: center;
+    margin: auto;
+}
+.about-contents img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+#about {
+    height: 105vh;
+    padding-bottom: 50px;
+}
+.about-text p {
+    font-size: 14px;
+}
+.about-text p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.about-text p:last-child {
+    font-weight: bold;
+}
+.tokyo {
+    margin-bottom: 10px;
+}
+.hobby {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#contact {
+    height: 110vh;
+}
+.contact form {
+    width: 80%;
+    margin: auto;
+}
+.form-group button {
+    margin-top: 20px;
+}
+.form-group textarea {
+    height:200px;
+}
+.form-group input {
+    margin-bottom: 20px;
+}
+footer {
+    height: 60px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 30px;
+    text-align: center;
+    color:gray;
+}
+
+@media screen and (min-width:992px) {
+    .nav {
+        display:block;
+        position: fixed;
+        top: 10px;
+        right: 50px;
+        z-index: 2;
+        width: 45px;
+        justify-content: center;
+    }
+    .li {
+        list-style:none;
+    }
+    
+    .dropdown {
+        display:none;
+    }
+    .dropdown-toggle::after {
+        display:none;
+    }
+    .dropdown-menu {
+        color:black;
+    }
+    .dropdown-item {
+        color:black;
+    }
+    .movie {
+        position: relative;
+    }
+    video {
+        height: 125vh;
+        margin-bottom: 100px;
+    }
+    .movie h2 {
+        position: absolute;
+        top:33.3%;
+        left: 43%;
+        -ms-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        color:white;
+    }
+    .skill,.works,.price,.about,.contact {
+        width: 80%;
+        margin: auto;
+    }
+    .pd-sp {
+        display:none;
+    }
+    .pd-pc {
+        display: block;
+        text-align: left;
+    }
+    .price {
+        width: 65%;
+        margin: auto;
+    }
+    .skill-contents {
+        display:flex;
+    }
+    .skill-desc {
+        width: 70%;
+        margin: auto;
+        line-height:25px;
+    }
+    .skill h2,.works h2,.price h2,.promise h2,.about h2,.contact h2 {
+        font-size: 28px;
+    }
+    .about-text p{
+        text-align: center;
+    }
+    .price-desc p{
+        font-size: 16px;
+    }
+    #works {
+        height: 120vh;
+        width: 60%;
+    }
+    .works-contents img {
+        height:550px;
+    }
+    .attention {
+        margin-top: 150px;
+    }
+    .attention p {
+        font-size: 16px;
+    }
+    #promise {
+        height: 120vh;
+    }
+    .promise h3 {
+        font-size: 20px;
+    }
+    .promise p {
+        font-size: 16px;
+    }
+}
