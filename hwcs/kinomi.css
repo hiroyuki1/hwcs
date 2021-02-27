@@ -1,0 +1,39 @@
+main {
+    text-align: center;
+    font-family: "Yu Mincho";
+}
+h1 {
+    padding-top: 40px;
+}
+.title {
+    margin-bottom: 50px;
+}
+.imgs {
+    width: 70%;
+    margin: auto;
+}
+.imgs img {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.imgs img:first-child {
+    margin-bottom: 50px;
+}
+.imgs p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.sp p{
+    padding-top: 100px;
+}
+.sp img {
+    width: 60%;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    color:gray;
+    margin-bottom: 20px;
+}
