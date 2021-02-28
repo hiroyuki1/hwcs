@@ -94,6 +94,15 @@ video {
     transform: translate(0);
     -webkit-transform: translateX(0);
 }
+.right-to-left h2 {
+    padding-bottom: 50px;
+}
+.price h2 {
+    padding-bottom: 0;
+}
+.promise h2 {
+    padding-bottom: 0;
+}
 .left-to-right {
     opacity: 0.1;
     transform: translateX(-50%);
@@ -145,7 +154,7 @@ video {
     font-size: 14px;
 }
 .skill-desc:last-of-type {
-    margin-bottom: 100px;
+    margin-bottom: 0;
 }
 #works {
     height: 100vh;
